@@ -14,7 +14,7 @@ li{
 /* HEADER MOVES ITEMS TO CENTER AND LEFT */
 .header{
     height:8%;
-    background-color:rgb(66, 65, 78);
+    background-color:rgb(46, 45, 49);
     width:100%;
     display:flex;
     align-items:center;
@@ -24,24 +24,47 @@ li{
 }
 li{
     justify-content:space-evenly;
+    background-color:rgb(46, 45, 49);
 }
 a{
     padding: 0 10 0 0;
-    color:rgb(255, 255, 255);
+    color:rgb(180, 180, 180);
+    font-size:1rem;
 }
 .header_button{
-    padding: 2 1 1 1;
-    background-color:rgb(255, 255, 255);
-    color:rgb(65, 80, 161);
-    border:solid rgb(255, 253, 253) 2px;
+    background-color:rgb(204, 199, 199);
+    color:rgb(98, 98, 102);
+    border:solid rgb(201, 198, 198) 2px;
     border-radius:10%;
    position:absolute;
    top:2.5%;
-   right:1%;
+   right:2%;
+   font-size:1rem;
    padding: 5 5 5 5;
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight:bold;
+}
+.header_button:hover{
+
 }
 .logo{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:290%;
-    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:3rem;
+    color:rgb(180, 180, 180);
+}
+.nav_ul li a {
+    display:block;
+    padding:1rem;
+}
+
+@media all and (max-width: 400px){
+    .header_button{
+        font-size:.8rem;
+    }
+    .logo{
+        font-size:2rem;
+    }
+    a{
+       font-size:.8rem;
+    }
 }
